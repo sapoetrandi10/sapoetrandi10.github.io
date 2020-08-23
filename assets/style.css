@@ -1,0 +1,247 @@
+body {
+    font-family: 'Dancing Script', cursive;
+}
+
+/* navbar */
+nav.navbar {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    position: relative;
+    z-index: 1;
+}
+
+nav.navbar div.collapse div.navbar-nav a.nav-item {
+    text-shadow: 5px 5px 3px 1;
+
+}
+
+nav.navbar div.collapse div.navbar-nav a.nav-item:hover::after {
+    content: "";
+    display: block;
+    width: 50%;
+    padding-bottom: 5px;
+    margin: auto;
+    margin-bottom: -8px;
+    border-bottom: 3px solid blue;
+}
+
+nav.navbar .container .navbar-brand {
+    font-family: 'Caveat', cursive;
+}
+
+nav.navbar .container img {
+    width: 32px;
+    height: 32px;
+    margin-right: 7px;
+    /* padding: 7px;
+        box-sizing: border-box; */
+}
+
+
+/* jumbotron */
+div.jumbotron {
+    height: 440px;
+    background-image: url(images/jumbo03.jpg);
+    background-size: cover;
+    color: whitesmoke;
+    position: relative;
+    margin-bottom: 0;
+}
+
+div.jumbotron::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    position: absolute;
+    bottom: 0;
+}
+
+@keyframes fadeInHeadline {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+div.jumbotron .container {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    /* transition: all 2s ease 1s; */
+    animation: fadeInHeadline 2s ease-out 1s 1;
+}
+
+/* div.jumbotron .container:hover {
+    opacity: 1;
+    display: block;
+} */
+
+
+
+div.jumbotron .container .display-3 {
+    text-shadow: 2px 2px 1px black;
+    margin-top: 63px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+
+
+
+/*section */
+section {
+    min-height: 200px;
+}
+
+section hr {
+    width: 250px;
+    border-top: 3px solid #999;
+}
+
+/* about Me */
+.aboutMe .container img.rounded-circle {
+    width: 200px;
+    height: 220px;
+    border: 3px solid darkgray;
+    /* display: none; */
+}
+
+section.aboutMe .container .media img {
+    width: 64px;
+    height: 50px;
+}
+
+section.aboutMe .container .media img.unpam {
+    width: 64px;
+    height: 64px;
+}
+
+section.aboutMe .container .media .media-body .smk {
+    font-size: 15px;
+}
+
+/* section.skills .container .row .thumbnail {
+    display: flex;
+} */
+section.skills .container .row .thumbnail .img-thumbnail {
+    margin: 0 5px;
+}
+
+section.skills .container .row .thumbnail .img-thumbnail img {
+    width: 80px;
+    height: 80px;
+    margin: 5px 5px;
+}
+
+
+section.contact .row .col-sm-12 ul.d-flex li img {
+    width: 50px;
+    height: 50px;
+    margin: 5px 10px;
+}
+
+section.skills,
+.contact {
+    background-color: #C5CBD3;
+}
+
+/* contact */
+.contact ul {
+    padding-left: 0px;
+}
+
+.contact ul li a {
+    color: #212529;
+    display: block;
+    text-decoration: none;
+}
+
+.contact ul li a:hover {
+    color: #75797c;
+}
+
+.contact ul li {
+    display: block;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    color: white;
+    line-height: 25px;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+footer.bg-info .container p {
+    display: inline;
+}
+
+footer.bg-info .container a {
+    color: white;
+}
+
+
+
+/*Responsive*/
+@media (min-width: 992px) {
+
+    section {
+        min-height: 400px;
+    }
+
+    nav.navbar {
+        /* background-color: #17A2B8; */
+
+    }
+
+    div.jumbotron {
+        margin-top: -56px;
+        height: 662px;
+    }
+
+    div.jumbotron .container {
+        width: 750px;
+        margin-top: 120px;
+
+    }
+
+    div.jumbotron .container .display-3 {
+        margin-top: 150px;
+        font-size: 75px;
+        font-weight: bold;
+    }
+
+    div.jumbotron .container .lead {
+        /* font-style: bold; */
+        font-size: 28px;
+    }
+
+
+
+}
